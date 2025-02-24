@@ -1,14 +1,138 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JUDr. Miroslav Chupáč &ndash; Advokátní kancelář</title>
     <script type="module" src="/src/main.js"></script>
 
-  </head>
-  <body>
-    <h1 class="bg-blue-600">Hello</h1>
-  </body>
+</head>
+<body class="h-[10000px]">
+    <header class="sticky top-0 left-0 bg-white p-6">
+        <div class="max-w-screen-lg mx-auto">
+            <div class="px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex-1 md:flex md:items-center md:gap-12">
+                        <a class="block text-teal-600" href="#">
+                            <span class="sr-only">Home</span>
+                            <img src="public/logo.svg" alt="" class="w-56">
+                        </a>
+                    </div>
+
+                    <div class="md:flex md:items-center md:gap-12">
+                        <nav aria-label="Global" class="hidden md:block">
+                            <ul class="flex items-center gap-6 text-sm">
+                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">O mně</a></li>
+                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">Zaměření</a></li>
+                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">Ceník</a></li>
+                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">Kontakt</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="block md:hidden">
+                        <button
+                                class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                        >
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="hero" class="py-[200px]">
+        <div class="max-w-screen-lg mx-auto ">
+            <div class="max-w-[800px]">
+                <p class="text-red-400 text-lg mb-2 font-semibold">JUDr. Miroslav Chupáč</p>
+                <h1 class="text-5xl font-semibold leading-[115%] text-white mb-4">Advokát v Plzni se zaměřením na občanské, obchodní a trestní právo.</h1>
+                <p class="text-gray-300 mb-16">Lorem ipsum dolor sit amet consectetur. Vulputate massa enim egestas laoreet consectetur cras. Commodo purus est nisi et est in arcu sit.</p>
+                <div class="flex items-center gap-8">
+                    <a href="#contact" class="bg-blue-700 p-6 text-white rounded-lg hover:bg-blue-600 active:bg-blue-500 transition-colors">Kontaktujte mě</a>
+                    <a href="#pricing" class="text-white font-medium underline hover:text-blue-500">Ceník služeb</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24">
+        <div class="max-w-screen-lg mx-auto">
+            <div class="grid grid-cols-2 gap-16">
+                <div>
+                    <p class="inline-block bg-blue-700/20 text-blue-600 px-2 py-1 rounded-sm mb-2">O mně</p>
+                    <h2 class="text-4xl font-semibold text-blue-950 mb-6">Váš advokát</h2>
+                    <p class="text-slate-700">
+                        Lorem ipsum dolor sit amet consectetur. Orci magna justo tellus ipsum placerat amet. Viverra amet nullam augue quis euismod lorem non urna. Dolor hac accumsan magna nibh et. Sed diam aenean scelerisque consequat quis. Mi vel nibh lectus hendrerit elementum. Bibendum egestas massa ipsum etiam.
+                        <br>
+                        <br>
+                        Ante enim gravida feugiat varius morbi sit pellentesque odio. Integer massa interdum volutpat sed ornare et. Nibh dictum pellentesque sit elit. A semper ultricies pellentesque tristique. Morbi tincidunt parturient venenatis ac hac cursus vitae augue.
+                    </p>
+                </div>
+                <div>
+                    <img src="public/about.png" alt="JUDr. Miroslav Chupáč" class="h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="space-y-4">
+        <div class="max-w-screen-lg mx-auto">
+            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+                <summary
+                        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+                >
+                    <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+
+                    <svg
+                            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </summary>
+
+                <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                    recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                    consequuntur distinctio corporis earum similique!
+                </p>
+            </details>
+
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+                <summary
+                        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+                >
+                    <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+
+                    <svg
+                            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </summary>
+
+                <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                    recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                    consequuntur distinctio corporis earum similique!
+                </p>
+            </details>
+        </div>
+    </section>
+
+
+</body>
 </html>
