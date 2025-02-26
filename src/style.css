@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
+body, html {
+    scroll-behavior: smooth;
+}
 
-section > .max-width {
-    @apply max-w-screen-lg mx-auto;
+p, li {
+    @apply leading-[150%];
 }
+
 #hero {
-    background-image: url(public/hero-img.png);
+    background-image: url(/hero-img.png);
     background-size: cover;
-}
-p {
-    line-height: 150%;
 }

@@ -1,105 +1,190 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JUDr. Miroslav Chupáč &ndash; Advokátní kancelář</title>
-    <script type="module" src="/src/main.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JUDr. Miroslav Chupáč &ndash; Advokátní kancelář</title>
+	<script type="module" src="/src/main.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "JUDr. Miroslav Chupáč – Advokátní kancelář",
+            "currenciesAccepted": "CZK",
+            "url": "https://www.akchupac.cz",
+            "description": "Profesionální služby advokáta se zaměřením na trestní, obchodní a občanské právo.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Klatovská třída 340/25",
+                "addressLocality": "Plzeň",
+                "addressRegion": "Plzeňský kraj",
+                "postalCode": "301 00",
+                "addressCountry": "CZE"
+            },
+            "openingHours": [
+                "Mo-Fr 09:00-17:00"
+            ],
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "49.74256287494995",
+                "longitude": "13.372146419819082"
+            },
+            "employee": {
+                "@type": "Person",
+                "name": "JUDr. Miroslav Chupáč",
+                "jobTitle": "Advokát"
+            }
+        }
+
+    </script>
+    <!--
+"currenciesAccepted": "CZK",
+"openingHours": ""
+
+ "sameAs": [
+                "https://www.linkedin.com/in/yourprofile",
+                "https://www.facebook.com/yourpage"
+            ],
+    -->
 
 </head>
-<body class="h-[10000px]">
-    <header class="sticky top-0 left-0 bg-white p-6">
-        <div class="max-w-screen-lg mx-auto">
-            <div class="px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-                    <div class="flex-1 md:flex md:items-center md:gap-12">
-                        <a class="block text-teal-600" href="#">
-                            <span class="sr-only">Home</span>
-                            <img src="public/logo.svg" alt="" class="w-56">
-                        </a>
-                    </div>
+<body>
+	<header class="sticky top-0 left-0 bg-white p-6 shadow-lg">
+		<div class="max-w-screen-lg mx-auto">
+			<div class="px-4 sm:px-6 lg:px-8">
+				<div class="flex h-16 items-center justify-between gap-2">
+					<div class="flex-1 md:flex md:items-center md:gap-12">
+						<a class="block text-teal-600" href="/">
+							<span class="sr-only">Home</span>
+							<img src="/logo.svg" alt="Logo Miroslav Chupáč advokátní kancelář" class="w-56 max-w-full">
+						</a>
+					</div>
 
-                    <div class="md:flex md:items-center md:gap-12">
-                        <nav aria-label="Global" class="hidden md:block">
-                            <ul class="flex items-center gap-6 text-sm">
-                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">O mně</a></li>
-                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">Zaměření</a></li>
-                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">Ceník</a></li>
-                                <li><a class="text-gray-500 transition hover:text-gray-700" href="#">Kontakt</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="block md:hidden">
-                        <button
-                                class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
-                        >
-                            <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="size-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                            >
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id="hero" class="py-[200px]">
-        <div class="max-w-screen-lg mx-auto ">
-            <div class="max-w-[800px]">
-                <p class="text-red-400 text-lg mb-2 font-semibold">JUDr. Miroslav Chupáč</p>
-                <h1 class="text-5xl font-semibold leading-[115%] text-white mb-4">Advokát v Plzni se zaměřením na občanské, obchodní a trestní právo.</h1>
-                <p class="text-gray-300 mb-16">Lorem ipsum dolor sit amet consectetur. Vulputate massa enim egestas laoreet consectetur cras. Commodo purus est nisi et est in arcu sit.</p>
-                <div class="flex items-center gap-8">
-                    <a href="#contact" class="bg-blue-700 p-6 text-white rounded-lg hover:bg-blue-600 active:bg-blue-500 transition-colors">Kontaktujte mě</a>
-                    <a href="#pricing" class="text-white font-medium underline hover:text-blue-500">Ceník služeb</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-24">
-        <div class="max-w-screen-lg mx-auto">
-            <div class="grid grid-cols-2 gap-16">
-                <div>
-                    <p class="inline-block bg-blue-700/20 text-blue-600 px-2 py-1 rounded-sm mb-2">O mně</p>
-                    <h2 class="text-4xl font-semibold text-blue-950 mb-6">Váš advokát</h2>
-                    <p class="text-slate-700">
-                        Lorem ipsum dolor sit amet consectetur. Orci magna justo tellus ipsum placerat amet. Viverra amet nullam augue quis euismod lorem non urna. Dolor hac accumsan magna nibh et. Sed diam aenean scelerisque consequat quis. Mi vel nibh lectus hendrerit elementum. Bibendum egestas massa ipsum etiam.
-                        <br>
-                        <br>
-                        Ante enim gravida feugiat varius morbi sit pellentesque odio. Integer massa interdum volutpat sed ornare et. Nibh dictum pellentesque sit elit. A semper ultricies pellentesque tristique. Morbi tincidunt parturient venenatis ac hac cursus vitae augue.
-                    </p>
-                </div>
-                <div>
-                    <img src="public/about.png" alt="JUDr. Miroslav Chupáč" class="h-full">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="space-y-4">
-        <div class="max-w-screen-lg mx-auto">
-            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
-                <summary
-                        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-                >
-                    <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+					<div class="md:flex md:items-center md:gap-12">
+						<nav aria-label="Global" class="hidden md:block">
+							<ul class="flex items-center gap-6 text-sm">
+								<li><a class="text-gray-500 transition hover:text-gray-700" href="#about">O mně</a></li>
+								<li><a class="text-gray-500 transition hover:text-gray-700" href="#work">Zaměření</a></li>
+								<li><a class="text-gray-500 transition hover:text-gray-700" href="#pricing">Ceník</a></li>
+								<li><a class="text-gray-500 transition hover:text-gray-700" href="#contact">Kontakt</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="block md:hidden">
+						<button
+								class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+						>
+							<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="size-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="hero" class="py-48 px-8">
+		<div class="max-w-screen-lg mx-auto ">
+			<div class="max-w-[800px]">
+				<p class="text-red-400 text-2xl mb-2 font-semibold">JUDr. Miroslav Chupáč</p>
+				<h1 class="text-5xl font-semibold leading-[115%] text-white mb-4">Advokát v Plzni se zaměřením na občanské, obchodní a trestní právo</h1>
+				<p class="text-gray-300 mb-16">Lorem ipsum dolor sit amet consectetur. Vulputate massa enim egestas laoreet consectetur cras. Commodo purus est nisi et est in arcu sit.</p>
+				<div class="flex flex-wrap items-center gap-8">
+					<a href="#contact" class="bg-blue-600 p-6 text-white rounded-lg hover:bg-blue-600/85 active:bg-blue-500 transition-colors">Kontaktujte mě</a>
+					<a href="#pricing" class="text-white font-medium underline hover:text-blue-500">Ceník služeb</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="py-24 px-8" id="about">
+		<div class="max-w-screen-lg mx-auto">
+			<div class="grid md:grid-cols-[2fr_1fr] grid-cols-1 gap-16">
+				<div>
+					<p class="inline-block bg-blue-700/20 text-blue-600 px-2 py-1 rounded-sm mb-2">O mně</p>
+					<h2 class="text-4xl font-semibold text-blue-950 mb-6">Váš advokát</h2>
+					<p class="text-slate-700">
+						Lorem ipsum dolor sit amet consectetur. Orci magna justo tellus ipsum placerat amet. Viverra amet nullam augue quis euismod lorem non urna. Dolor hac accumsan magna nibh et. Sed diam aenean scelerisque consequat quis. Mi vel nibh lectus hendrerit elementum. Bibendum egestas massa ipsum etiam.
+						<br>
+						<br>
+						Ante enim gravida feugiat varius morbi sit pellentesque odio. Integer massa interdum volutpat sed ornare et. Nibh dictum pellentesque sit elit. A semper ultricies pellentesque tristique. Morbi tincidunt parturient venenatis ac hac cursus vitae augue.
+					</p>
+				</div>
+				<div>
+					<img src="/about.png" alt="JUDr. Miroslav Chupáč" class="object-fill md:max-w-96 max-w-full mx-auto">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="work" class="px-8 py-24 bg-blue-700/5">
+		<div class="max-w-screen-lg mx-auto">
+			<div class="text-center mb-16">
+				<p class="inline-block bg-blue-700/20 text-blue-600 px-2 py-1 rounded-sm mb-1">Moje specializace</p>
+				<h2 class="text-4xl font-semibold text-blue-950 mb-4">Oblasti práva</h2>
+				<p class="text-slate-700 max-w-[32rem] mx-auto">Zaměřuji se primárně na následující oblasti, ale samozřejmě si hravě poradím s jakýmkoliv právním problémem.</p>
+			</div>
+			<div class="grid md:grid-cols-3 grid-cols-1 gap-8">
+				<div class="bg-white px-6 py-8 h-full rounded-sm">
+					<img src="icons/ico-law.svg" alt="" class="mb-1">
+					<h3 class="text-3xl text-blue-950 font-semibold mb-3">Občanské právo</h3>
+					<ul>
+						<li class="mb-1.5 text-slate-700">Zastoupení ve sporech týkajících se občanského práva</li>
+						<li class="mb-1.5 text-slate-700">Vymáhání pohledávek</li>
+						<li class="mb-1.5 text-slate-700">Převody nemovitostí</li>
+						<li class="mb-1.5 text-slate-700">Sepisování smluv a listin</li>
+						<li class="mb-1.5 text-slate-700">Rozvody a rozdělení majetku</li>
+						<li class="mb-1.5 text-slate-700">Úprava výchovy a výživy nezletilých dětí</li>
+					</ul>
+				</div>
+				<div class="bg-white px-6 py-8 h-full rounded-sm">
+					<img src="icons/ico-law.svg" alt="" class="mb-1">
+					<h3 class="text-3xl text-blue-950 font-semibold mb-3">Obchodní právo</h3>
+					<ul>
+                        <li class="mb-1.5 text-slate-700">Zastoupení ve sporech týkajících se obchodního práva</li>
+                        <li class="mb-1.5 text-slate-700">Vymáhání pohledávek i mezi podnikateli</li>
+                        <li class="mb-1.5 text-slate-700">Zakládání obchodních společností</li>
+                        <li class="mb-1.5 text-slate-700">Správa obchodních společností</li>
+                    </ul>
+				</div>
+				<div class="bg-white px-6 py-8 h-full rounded-sm">
+					<img src="icons/ico-law.svg" alt="" class="mb-1">
+					<h3 class="text-3xl text-blue-950 font-semibold mb-3">Trestní právo</h3>
+					<ul>
+						<li class="mb-1.5 text-slate-700">Zastoupení ve sporech týkajících se občanského práva</li>
+						<li class="mb-1.5 text-slate-700">Vymáhání pohledávek</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
+	</section>
+    <section class="space-y-4 px-8 py-24" id="pricing">
+        <div class="max-w-screen-lg mx-auto">
+            <h2 class="text-4xl font-semibold text-blue-950 mb-6">Ceník služeb</h2>
+            <p class="text-slate-700 mb-8">Každá kauza je velice individuální a cena a druh sazby se určují podle mnoha faktorů, například náročnost, zákonné nároky atd. Obecně však můžu říct, že ceny za mé služby začínají v přepočtu od 1500Kč za hodinu.
+                <br>
+                <br>
+                Základním právním rámcem pro stanovení výše odměny je zákon č. 85/1996 Sb., o advokacii, odkazující vesvém  ust. § 22 odst. 3 na vyhlášku Ministerstva spravedlnosti č. 177/1996  Sb., o odměnách advokátů a náhradách advokátů za poskytování právních  služeb (dále jen „advokátní tarif“). Advokátní tarif rozlišuje mimosmluvní a smluvní odměnu.</p>
+
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-blue-700/5 p-4 text-gray-900 mb-4">
+                    <h3 class="text-lg font-semibold text-blue-950">Lorem ipsum dolor sit amet consectetur adipisicing?</h3>
                     <svg
-                            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+                        class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                     >
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </summary>
-
                 <p class="mt-4 px-4 leading-relaxed text-gray-700">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
                     recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
@@ -109,16 +194,16 @@
 
             <details class="group [&_summary::-webkit-details-marker]:hidden">
                 <summary
-                        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+                    class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
                 >
                     <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
 
                     <svg
-                            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+                        class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                     >
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
@@ -132,6 +217,62 @@
             </details>
         </div>
     </section>
+
+
+    <section id="contact" class="py-24 px-8 bg-blue-700/5">
+        <div class="max-w-screen-lg mx-auto">
+            <div class="text-center mb-12">
+<!--                <p class="inline-block bg-blue-700/20 text-blue-600 px-2 py-1 rounded-sm mb-1">Kontakt</p>-->
+                <h2 class="text-4xl font-semibold text-blue-950 mb-6">Kontakt</h2>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                <div>
+                    <div class="bg-white p-8 mb-6">
+                        <h3 class="text-2xl font-semibold text-blue-950 mb-2">Kontakt</h3>
+                        <div class="flex gap-2 mb-1 rounded-sm">
+                            <img src="icons/ico-mail.svg" alt="">
+                            <p><a class="underline text-blue-950" href="mailto:chupac@akchupac.cz">chupac@akchupac.cz</a></p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="icons/ico-location.svg" alt="">
+                            <p class="text-blue-950">Klatovská třída 340/25, 301 00 Plzeň</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm">
+                        <h3 class="text-2xl font-semibold text-blue-950 mb-2">Kontakt</h3>
+                        <p class="text-blue-950">JUDr. Miroslav Chupáč</p>
+                        <p class="text-blue-950">Klatovská třída 340/25, 301 00 Plzeň</p>
+                        <br>
+                        <p class="text-blue-950">Datová schránka: 433678</p>
+                        <p class="text-blue-950">IČO: 322432788</p>
+                    </div>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2578.3125294972497!2d13.369568413031569!3d49.74256303795978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470af1fcece792fd%3A0xb641bdf2de35fbb2!2zS2xhdG92c2vDoSB0xZkuIDM0MC8yNSwgMzAxIDAwIFBsemXFiCAzLUppxb5uw60gUMWZZWRtxJtzdMOt!5e0!3m2!1scs!2scz!4v1740516956840!5m2!1scs!2scz"
+                        width="100%"
+                        height="100%"
+                        class="border-none h-full w-full rounded-sm min-h-64 bg-white"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-800 px-8">
+        <div class="max-w-screen-lg mx-auto py-6">
+            <div class="flex flex-wrap justify-between gap-8">
+                <p class="text-white">&copy; Miroslav Chupáč, 2025</p>
+                <p class="text-white">Web vytvořil <a href="www.skoula.com">Michal Škoula</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 
 
 </body>
